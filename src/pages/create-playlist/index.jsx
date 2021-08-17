@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Box, Grid } from '@chakra-ui/react'
-import PlaylistForm from "../../components/PlaylistForm"
+import PlaylistForm from "../../components/playlist-form"
 import Track from '../../components/Track'
-import SearchBar from '../../components/SearchBar'
+import SearchBar from '../../components/search-bar'
 import { getSearchTrack  } from "../../libraries/spotify";
 import { setTracks } from "../../redux/store/playlist";
 import { useSelector, useDispatch } from 'react-redux';
