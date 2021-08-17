@@ -20,7 +20,7 @@ export const useAuth =  () => {
       if (isAuthenticated && Object.keys(user).length === 0) {
         getProfile(accessToken).then(user => {
           dispatch(storeUser(user))
-          history.push('/create-playlist')
+          history.push('/home')
         })
       }
     }, [isAuthenticated, accessToken, user, history, dispatch])
