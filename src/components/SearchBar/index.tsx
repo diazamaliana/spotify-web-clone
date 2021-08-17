@@ -32,8 +32,7 @@ const SearchBar = ({ handleSearch }:ISearchBar) => {
                     padding="1em"
                     borderRadius="0.5rem"
                     marginRight="0.5em"
-                    border="none"
-                    bgColor={'dark.700'}
+                    bgColor={'dark.500'}
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                 />

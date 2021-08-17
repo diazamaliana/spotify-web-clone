@@ -30,6 +30,7 @@ export const Header = () =>{
               leftIcon={<FaSpotify fontSize="2xl" />}
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })} 
               variant="ghost"
+              color='white'
               >
              Spotigi
           </Button>

@@ -1,4 +1,4 @@
-import { extendTheme,    theme as defaultTheme } from '@chakra-ui/react'
+import { extendTheme,    theme as defaultTheme, withDefaultColorScheme } from '@chakra-ui/react'
 import { brand, dark } from './colors'
   
   const Input = {
@@ -30,13 +30,12 @@ import { brand, dark } from './colors'
             scrollBehavior: 'smooth',
           },
           body: {
-            bg: "dark.300",
-            color: "dark.900"
+            color: "dark.900",
           }
         }),
       },
     },
-    // withDefaultColorScheme({ colorScheme: 'brand' })
+    withDefaultColorScheme({ colorScheme: 'brand' })
   )
   
   export default theme

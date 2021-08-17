@@ -57,6 +57,7 @@ export const {
   removeSelectedTracks,
   clearSelectedTracks,
   setForm,
+  clearForm,
   clearState
 } = playlistSlice.actions
 
