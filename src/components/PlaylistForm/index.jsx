@@ -1,6 +1,6 @@
 import { useToast, Box, Heading, Input, Textarea, Button } from '@chakra-ui/react'
 import { useDispatch, useSelector } from "react-redux"
-import { clearSelectedTracks } from '../../redux/store/playlist'
+import { clearSelectedTracks, clearForm } from '../../redux/store/playlist'
 import { setForm } from "../../redux/store/playlist"
 import { createPlaylist, addTrackToPlaylist } from "../../libraries/spotify"
 
@@ -28,6 +28,7 @@ const PlaylistForm = () => {
              uris: selectedTracks
            })
          }).then(() => {
+            dispatch(clearForm())
             dispatch(clearSelectedTracks())
             toast({
                 title: "Playlist created.",
@@ -40,7 +41,7 @@ const PlaylistForm = () => {
          })
        } else {
          toast({
-            title: "Information",
+            title: "Warning",
             position: "top",
             description: "Please selected some tracks to make a playlist.",
             status: "info",
@@ -63,7 +64,7 @@ const PlaylistForm = () => {
                 marginTop="0.5em"
                 padding="1em"
                 borderRadius="0.5rem"
-                bgColor={'dark.700'} 
+                bgColor={'dark.500'} 
                 type="text"
                 name="title"
                 minLength="10"
@@ -76,7 +77,7 @@ const PlaylistForm = () => {
                 padding="1em"
                 marginTop="0.5em"
                 borderRadius="0.5rem"
-                bgColor={'dark.700'} 
+                bgColor={'dark.500'} 
                 name="description"
                 minLength="10"
                 onChange={handleFormChanges}
