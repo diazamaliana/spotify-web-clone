@@ -90,7 +90,7 @@ const Login = () => {
               { !isAuthenticated && (
                 <Button
                 onClick={authorize}
-                bg={'#1db954'}
+                bg={'brand.300'}
                 color={'white'}
                 _hover={{ bg: 'whiteAlpha.500' }}>
                 Get Spotigi

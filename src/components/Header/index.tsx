@@ -61,7 +61,7 @@ export const Header = ({ onOpen, ...rest }:HeaderProps) => {
         px={{ base: 4, md: 4 }}
         height="20"
         alignItems="center"
-        bg={'dark.300'}
+        bg={'dark.200'}
         borderBottomWidth="1px"
         borderBottomColor={'dark.600'}
         justifyContent={{ base: 'space-between', md: 'flex-end' }}
