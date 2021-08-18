@@ -8,29 +8,35 @@ import { useSelector } from 'react-redux';
 const Home = () => {
   const { isAuthenticated, accessToken } = useSelector(state => state.auth)
   const [playlists, setPlaylists] = useState([]);
+  const [isLoading, setIsloading] = useState(false)
+
 
   useEffect(() => {
    if(isAuthenticated)
+    setIsloading(true);
     getUserPlaylist(accessToken)
       .then(user => setPlaylists(user.items))
+      setIsloading(false);
   }, [isAuthenticated, accessToken]);
 
   return (
       <div className="home">
         <Heading className="subtitle">  Your Playlists </Heading>
+        {isLoading ? (
+           <p>Loading...</p>
+        ) : (
         <div className="content">
           {playlists.map( playlist => 
             <Card
-                onClick={() => window.open(playlist.external_urls.spotify) }
                 key={playlist.id}
+                onClick={() => window.open(playlist.external_urls.spotify) }
                 alt={playlist.name}
                 thumbnail={playlist.images[0]?.url}
                 title={playlist.name}
                 owner={'By '+ playlist.owner.display_name}
-          />
-          )}
-          
+            />)}
         </div>
+        )}
       </div>
   )
 }

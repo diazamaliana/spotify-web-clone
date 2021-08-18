@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Box, Grid } from '@chakra-ui/react'
+import { Box, Grid, Stack, Skeleton } from '@chakra-ui/react'
 import PlaylistForm from "../../components/playlist-form"
 import Track from '../../components/track'
 import SearchBar from '../../components/search-bar'
@@ -31,9 +31,12 @@ const CreatePlaylist= () => {
     <Box >
         <PlaylistForm />
         <SearchBar handleSearch = {handleSearch} />
-        
         {isLoading ? (
-            <p>Loading...</p>
+           <Stack>
+              <Skeleton height="40px" />
+              <Skeleton height="40px" />
+              <Skeleton height="40px" />   
+           </Stack>
         ) : (
           <Grid
             width={'auto'}
@@ -44,7 +47,7 @@ const CreatePlaylist= () => {
             marginTop=".5rem">
             {tracks.map(track => (
             <Track  track={track} key={track.id} />
-            ))}   
+            ))}
         </Grid>
         )}  
 
