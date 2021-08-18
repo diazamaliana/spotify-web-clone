@@ -17,6 +17,8 @@ export const useAuth =  () => {
           if (key === 'access_token') dispatch(login(value))
         })
       }
+      
+      // function to redirect spotify login API
       if (isAuthenticated && Object.keys(user).length === 0) {
         getProfile(accessToken).then(user => {
           dispatch(storeUser(user))

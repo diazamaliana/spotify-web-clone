@@ -1,8 +1,10 @@
-import React, { ReactNode } from 'react'
+import { ReactNode } from 'react'
 import { FiHome,  FiPlus } from 'react-icons/fi'
 import { FaSpotify } from "react-icons/fa"
-import { Box,  CloseButton,  Flex, Text, Drawer, DrawerContent,   useDisclosure, BoxProps } from '@chakra-ui/react'
+import { Box,  CloseButton,  Flex, Text, Drawer, DrawerContent,  useDisclosure, BoxProps } from '@chakra-ui/react'
 import { NavItem, Header } from '../header'
+
+
 
 
 export default function SidebarWithHeader ({children} : { children: ReactNode}) {

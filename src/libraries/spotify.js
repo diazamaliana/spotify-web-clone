@@ -10,7 +10,6 @@ const getSpotifyAuth = () =>{
       'user-read-private',
       'playlist-modify-private',
       'user-read-email',
-      'user-top-read',
       'playlist-read-private'
       ],
   }).toString()
@@ -62,21 +61,10 @@ const addTrackToPlaylist = (accessToken, playlistId, payload) => {
   }).then(res => res.json())
 }
 
-const getTopTracks = (accessToken, limit, offset) => {
-  return fetch(`${API_ENDPOINT}/me/top/tracks?limit=${limit}&offset=${offset}`, {
-    headers: {
-        'Authorization': 'Bearer ' + accessToken
-    },
-}).then(res => res.json())
-}
-
-
-
 export { 
   getSpotifyAuth, getProfile, 
   getSearchTrack, createPlaylist, 
   addTrackToPlaylist, getUserPlaylist,
-  getTopTracks
 };
 
  

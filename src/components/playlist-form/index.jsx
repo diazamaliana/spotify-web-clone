@@ -61,7 +61,7 @@ const PlaylistForm = () => {
             <label htmlFor="title">Title</label>
             <Input
                 placeholder="Playlist Title"
-                marginTop="0.5em"
+                margin="0.5em 0"
                 padding="1em"
                 borderRadius="0.5rem"
                 bgColor={'dark.500'} 

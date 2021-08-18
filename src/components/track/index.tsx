@@ -35,8 +35,8 @@ const Track = ({track} : {track: SpotifyTrack}) => {
         <Image padding='.5rem' borderRadius='5px' boxSize='80px' src={track.album.images[1].url}
                objectFit="cover" alt={track.album.name}/>
         <Flex mx={2} direction='column' flex={1}>
-            <Text fontSize={useBreakpointValue(["sm", "md", "lg"])} fontWeight='bold'>{track.name}</Text>
-            <Text fontSize={useBreakpointValue(["sm", "md", "lg"])}> {artistName}</Text>            
+            <Text fontSize={useBreakpointValue([ "md", "lg"])} fontWeight='bold'>{track.name}</Text>
+            <Text fontSize={useBreakpointValue([ "md", "lg"])}> {artistName}</Text>            
         </Flex>
          <Flex mx={2} direction='column' flex={1}  display={{ md: 'flex', base: 'none' }}>
             <a href={track.album.external_urls.spotify} className='link'>{track.album.name}</a>
