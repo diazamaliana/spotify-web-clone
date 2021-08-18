@@ -1,4 +1,4 @@
-import React, { ReactText }  from 'react';
+import React, { ReactText }  from 'react'
 import { NavLink } from 'react-router-dom'
 import {  IconButton,  Flex,  HStack,  Icon, Link,  Text,  FlexProps } from '@chakra-ui/react'
 import { IconType } from 'react-icons';
@@ -7,7 +7,7 @@ import Profile from '../profile'
 import { FaSpotify } from "react-icons/fa"
 import { useAuth } from '../../libraries/useAuth'
 import { logout } from '../../redux/store/auth'
-import { useDispatch } from "react-redux";
+import { useDispatch } from "react-redux"
 
 interface NavItemProps extends FlexProps {
   icon: IconType;
@@ -53,7 +53,6 @@ export  const NavItem = ({ icon, to , children, ...rest }: NavItemProps) => {
 export const Header = ({ onOpen, ...rest }:HeaderProps) => {
   const { user } = useAuth()
   const dispatch = useDispatch()
-
 
     return (
       <Flex
