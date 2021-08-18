@@ -54,6 +54,10 @@ export const Header = ({ onOpen, ...rest }:HeaderProps) => {
   const { user } = useAuth()
   const dispatch = useDispatch()
 
+  const handleLogout = () => {
+    dispatch(logout())
+  }
+
     return (
       <Flex
         ml={{ base: 0, md: 60 }}
@@ -81,11 +85,11 @@ export const Header = ({ onOpen, ...rest }:HeaderProps) => {
           Spotigi
         </Text>
   
-        <HStack spacing={{ base: '0', md: '6' }}>
+        <HStack spacing={{ base: '2', md: '6' }}>
           <Profile userData={user} />
           <IconButton
-            onClick={() => dispatch(logout())}
-            size="md"
+            onClick={handleLogout}
+            size="sm"
             variant="outline"
             aria-label="open menu"
             icon={<FiPower />}
