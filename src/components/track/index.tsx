@@ -32,14 +32,14 @@ const Track = ({track} : {track: SpotifyTrack}) => {
     return (
     <Flex alignItems='center' borderBottom='1px' textAlign='left' width={["full", null, "unset"]} 
           borderRadius='sm' _hover={{ bg: 'dark.500' }} justifyContent='space-between' flex={1}>
-        <Image padding='.5rem' borderRadius='5px' boxSize='80px' src={track.album.images[1].url}
+        <Image data-testid="album-cover" padding='.5rem' borderRadius='5px' boxSize='80px' src={track.album.images[1].url}
                objectFit="cover" alt={track.album.name}/>
         <Flex mx={2} direction='column' flex={1}>
-            <Text fontSize={useBreakpointValue([ "md", "lg"])} fontWeight='bold'>{track.name}</Text>
-            <Text fontSize={useBreakpointValue([ "md", "lg"])}> {artistName}</Text>            
+            <Text data-testid="track-name" fontSize={useBreakpointValue([ "md", "lg"])} fontWeight='bold'>{track.name}</Text>
+            <Text data-testid="artist-name" fontSize={useBreakpointValue([ "md", "lg"])}> {artistName}</Text>            
         </Flex>
          <Flex mx={2} direction='column' flex={1}  display={{ md: 'flex', base: 'none' }}>
-            <a href={track.album.external_urls.spotify} className='link'>{track.album.name}</a>
+            <a data-testid="album-name" href={track.album.external_urls.spotify} className='link'>{track.album.name}</a>
          </Flex>
         <Flex  mx={2} direction='column' >
             <Button
@@ -48,7 +48,7 @@ const Track = ({track} : {track: SpotifyTrack}) => {
                 variant={isSelected? 'outline' : 'solid'}
                 color={'white'}                
                 onClick={handleClick}
-            > {isSelected ? "Selected" : "Select"}</Button>        
+            >{isSelected ? "Selected" : "Select"}</Button>        
         </Flex>
     </Flex>
     )

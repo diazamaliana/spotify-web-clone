@@ -79,7 +79,7 @@ const PlaylistForm = () => {
                 borderRadius="0.5rem"
                 bgColor={'dark.500'} 
                 name="description"
-                minLength="10"
+                minLength="20"
                 onChange={handleFormChanges}
                 value={form.description}
             ></Textarea>
