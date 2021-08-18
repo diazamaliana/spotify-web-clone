@@ -1,7 +1,7 @@
 import React from "react"
-import { Flex, Image, Text, Button } from '@chakra-ui/react'
-import { useAppDispatch, useAppSelector } from '../../redux'
 import './styles.css'
+import { Flex, Image, Text, Button, useBreakpointValue} from '@chakra-ui/react'
+import { useAppDispatch, useAppSelector } from '../../redux'
 import { Artist, Track as SpotifyTrack } from "../../redux/types"
 import { addSelectedTracks, removeSelectedTracks } from "../../redux/store/playlist"
 
@@ -28,20 +28,22 @@ const Track = ({track} : {track: SpotifyTrack}) => {
         );
     });
 
+
     return (
     <Flex alignItems='center' borderBottom='1px' textAlign='left' width={["full", null, "unset"]} 
-          borderRadius='sm' _hover={{ bg: 'dark.500' }} justifyContent='space-between'>
+          borderRadius='sm' _hover={{ bg: 'dark.500' }} justifyContent='space-between' flex={1}>
         <Image padding='.5rem' borderRadius='5px' boxSize='80px' src={track.album.images[1].url}
                objectFit="cover" alt={track.album.name}/>
         <Flex mx={2} direction='column' flex={1}>
-            <Text fontSize='lg' >{track.name}</Text>
-            <Text> {artistName}</Text>            
+            <Text fontSize={useBreakpointValue(["sm", "md", "lg"])} fontWeight='bold'>{track.name}</Text>
+            <Text fontSize={useBreakpointValue(["sm", "md", "lg"])}> {artistName}</Text>            
         </Flex>
-        <Flex mx={2} direction='column' flex={1}>
+         <Flex mx={2} direction='column' flex={1}  display={{ md: 'flex', base: 'none' }}>
             <a href={track.album.external_urls.spotify} className='link'>{track.album.name}</a>
-        </Flex>
-        <Flex  mx={2} direction='column'>
+         </Flex>
+        <Flex  mx={2} direction='column' >
             <Button
+                size={useBreakpointValue(["sm", "md"])}
                 type='button'
                 variant={isSelected? 'outline' : 'solid'}
                 color={'white'}                

@@ -3,11 +3,11 @@ import theme from './theme'
 import './App.css'
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
 import { useAppSelector } from './redux'
-import Login from './pages/Login'
-import Home from './pages/Home'
-import CreatePlaylist from './pages/CreatePlaylist'
+import Login from './pages/login'
+import Home from './pages/home'
+import CreatePlaylist from './pages/create-playlist'
 import { ChakraProvider } from '@chakra-ui/react';
-import SidebarWithHeader from './components/Sidebar';
+import SidebarWithHeader from './components/sidebar';
 
 
 function App() {

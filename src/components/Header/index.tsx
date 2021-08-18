@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import {  IconButton,  Flex,  HStack,  Icon, Link,  Text,  FlexProps, } from '@chakra-ui/react'
 import { IconType } from 'react-icons';
 import {  FiMenu,  FiPower } from 'react-icons/fi'
-import  Profile  from '../Profile'
+import Profile from '../profile'
 import { FaSpotify } from "react-icons/fa"
 import { useAuth } from '../../libraries/useAuth'
 import { logout } from '../../redux/store/auth'

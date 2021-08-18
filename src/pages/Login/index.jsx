@@ -90,6 +90,7 @@ const Login = () => {
             <Stack direction={'row'}>
               { !isAuthenticated && (
                 <Button
+                size='lg'
                 onClick={authorize}
                 bg={'brand.300'}
                 color={'white'}
