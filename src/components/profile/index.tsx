@@ -1,4 +1,4 @@
-import { Avatar,  Box,  HStack,  VStack,  Link, Button }from '@chakra-ui/react';
+import { Avatar,  Box,  HStack,  VStack,  Link, Button }from '@chakra-ui/react'
 
 interface IUser {
     userData: any
