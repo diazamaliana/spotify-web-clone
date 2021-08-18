@@ -1,12 +1,13 @@
 import React, { ReactNode } from 'react'
 import { FiHome,  FiPlus } from 'react-icons/fi'
 import { FaSpotify } from "react-icons/fa"
-import { Box,  CloseButton,  Flex, Text, Drawer, DrawerContent,   useDisclosure, BoxProps } from '@chakra-ui/react';
+import { Box,  CloseButton,  Flex, Text, Drawer, DrawerContent,   useDisclosure, BoxProps } from '@chakra-ui/react'
 import { NavItem, Header } from '../header'
 
 
 export default function SidebarWithHeader ({children} : { children: ReactNode}) {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  
   return (
     <Box minH="100vh" bg={'dark.400'}>
         <SidebarContent
@@ -31,14 +32,12 @@ export default function SidebarWithHeader ({children} : { children: ReactNode}) 
           {children}
         </Box>
     </Box>
-
   )
 }
 
 interface SidebarProps extends BoxProps {
     onClose: () => void;
 }
-
 
 export const SidebarContent = ({ onClose,...rest }: SidebarProps) => {
   return (
