@@ -54,7 +54,7 @@ Spotigi is Spotify Generasi Gigih, a React front-end client that communicates wi
 
 ### Built With
 
-- [<img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K' width='16'/> Create React App](https://create-react-app.dev/) to initialize the project.
+- [<img src='https://github.com/diazamaliana/spotify-web-clone/blob/master/public/logo192.png?raw=true' width='16'/> Create React App](https://create-react-app.dev/) to initialize the project.
 - [⚡️ Chakra UI](https://chakra-ui.com/docs/getting-started) for styling and layout.
 - [<img src='https://react-redux.js.org/img/redux_white.svg' width='16'/> React Redux](https://react-redux.js.org/) for state management.
 - [<img src='https://iconape.com/wp-content/files/sm/371377/svg/371377.svg' width='16'/> React Router](https://reactrouter.com/web/guides/quick-start) to define routes in the application.
