@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/diazamaliana/spotify-web-clone">
-    <img src="https://lh6.googleusercontent.com/6NBbMrteTE9XaPNzHuHSfuAQfugUFkXmAFE4LeaNObYg6rBSFHPVszZB1eZVe5d4h-B7in7PkCasTiEBKwzChci6MPoCK3gqeIb7uBXKqjgTFxyNA6_dsYwOTPilhUHKqA=w1280" alt="Logo" width="120" >
+    <img src="https://raw.githubusercontent.com/diazamaliana/spotify-web-clone/master/shoots/logo.png" alt="Logo" width="120" >
   </a>
 
   <h3 align="center">Spotigi - Generasi Gigih Final Project</h3>
@@ -59,7 +59,7 @@ Spotigi is Spotify Generasi Gigih, a React front-end client that communicates wi
 - [<img src='https://react-redux.js.org/img/redux_white.svg' width='16'/> React Redux](https://react-redux.js.org/) for state management.
 - [<img src='https://iconape.com/wp-content/files/sm/371377/svg/371377.svg' width='16'/> React Router](https://reactrouter.com/web/guides/quick-start) to define routes in the application.
 - [🐙 react-testing-library](https://testing-library.com/) for testing.
-- Written in [Javascript]('https://developer.mozilla.org/en-US/docs/Web/JavaScript') and [Typescript]('https://www.typescriptlang.org/').
+- Written in [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and [Typescript](https://www.typescriptlang.org/).
 - Hosted on [Vercel](https://vercel.com/)🚀.
 
 
