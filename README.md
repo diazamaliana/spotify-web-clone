@@ -27,6 +27,7 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
+    <li><a href="#features">Features</a></li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -34,7 +35,6 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -45,8 +45,8 @@
 ## About The Project
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/diazamaliana/spotify-web-clone/master/shoots/shoot-web-1.jpg" width='400' alt='shoot on web'/>
-  <img src="https://raw.githubusercontent.com/diazamaliana/spotify-web-clone/master/shoots/shoot-mobile.jpg" width='151' alt='shoot on mobile' /> 
+  <img src="https://raw.githubusercontent.com/diazamaliana/spotify-web-clone/master/shoots/shoot-web-1.jpg" width='500' alt='shoot on web'/>
+  <img src="https://raw.githubusercontent.com/diazamaliana/spotify-web-clone/master/shoots/shoot-mobile.jpg" width='189' alt='shoot on mobile' /> 
 </p>
 
 Spotigi is Spotify Generasi Gigih, a React front-end client that communicates with the Spotify API. This platform will connect to your Spotify account  that displays information about your playlists and create a new one.
@@ -62,7 +62,19 @@ Spotigi is Spotify Generasi Gigih, a React front-end client that communicates wi
 - Written in [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and [Typescript](https://www.typescriptlang.org/).
 - Hosted on [Vercel](https://vercel.com/)🚀.
 
+<!-- FEATURES THE PROJECT -->
+##  Features
+If you have any suggestions/problems about the features, please let me know [here](https://github.com/diazamaliana/spotify-web-clone/issues).
 
+If you want to try this on https://spotigi.vercel.app/, please let me know your email. Because your email account must be registered in my development dashboard.
+
+| Feature         | Description   |
+| --------------- | ------------- |
+|  Login Users    | To redirect to the login page Spotify asks you to allow the app to access account information such as profile and playlists.  Authorization using [Implicit Grant Flows](https://developer.spotify.com/documentation/general/guides/authorization-guide/#implicit-grant-flow), so if you refresh the page you are automatically logged out or when your token has expired. |
+| Home Page       | A home page for your playlists. If you click the card will redirect to your spotify playlists.  |
+| Search          | To search for other tracks/artists based on the keywords entered. Limited to 15 tracks/artist.|
+| Create Playlist | To make a new private playlist to your Spotify account. |
+| User Profile    | After login, you can see your profile picture and username on the top right corner of the page. If you click it will redirect to your spotify profile.|
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -115,14 +127,6 @@ You’ll need to have Node >= 10.16, npm >= 6+ or yarn >= 0.25+
        <img src='https://raw.githubusercontent.com/diazamaliana/spotify-web-clone/master/shoots/__test__.jpg' alt='testing shoots'/>
     </p>
 
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 
 <!-- CONTACT -->
