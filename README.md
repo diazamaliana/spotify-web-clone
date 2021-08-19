@@ -10,7 +10,7 @@
   <p align="center">
     A replica of Spotify to Create a Playlist!
     <br />
-    <a href="https://spotigi-diazamaliana.vercel.app/create-playlist"><strong>View Demo</strong></a>
+    <a href="https://youtu.be/GZCy6BwRH3M"><strong>View Demo</strong></a>
     <br />
     <br />
   </p>
