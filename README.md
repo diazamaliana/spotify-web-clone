@@ -83,11 +83,12 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-You’ll need to have Node >= 10.16, npm >= 6+ or yarn >= 0.25+
+1. You’ll need to have Node >= 10.16, npm >= 6+ or yarn >= 0.25+
 * npm
   ```sh
   npm install npm@latest -g
   ```
+2. You'll need to have Spotify Account.
 
 ### Installation
 
