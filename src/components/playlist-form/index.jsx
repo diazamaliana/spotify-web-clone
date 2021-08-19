@@ -73,12 +73,14 @@ const PlaylistForm = () => {
             />
             <label htmlFor="description">Description</label>
             <Textarea
+                required="required"
                 placeholder="Playlist Description"
                 padding="1em"
                 marginTop="0.5em"
                 borderRadius="0.5rem"
                 bgColor={'dark.500'} 
                 name="description"
+                type="text"
                 minLength="20"
                 onChange={handleFormChanges}
                 value={form.description}

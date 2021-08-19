@@ -1,6 +1,7 @@
 const API_ENDPOINT = "https://api.spotify.com/v1";
 const SPOTIFY_AUTHORIZE_ENDPOINT = "https://accounts.spotify.com/authorize";
 
+// function to redirect spotify login API
 const getSpotifyAuth = () =>{
   const options = new URLSearchParams({
     client_id: process.env.REACT_APP_SPOTIFY_CLIENT_ID,
