@@ -26,6 +26,7 @@ const SearchBar = ({ handleSearch }:ISearchBar) => {
         <Flex width={["full", null, "unset"]} textAlign="left" alignItems="center" padding="0.75rem">
             <form style={{ display: "flex", flex: 1 }} onSubmit={handleSubmit}>
                 <Input
+                    data-testid="search-bar"
                     width={["full", null, "unset"]}
                     name="track"
                     placeholder="Search for track or artist"
