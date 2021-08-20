@@ -42,9 +42,9 @@ test("search component are rendered correctly", async ()  => {
     
     await screen.findByText('I Want To Break Free')
 
-    const firstTrackResult = screen.getByText("Bohemian Rhapsody - Remastered 2011")
-	const lastTrackResult = screen.getByText("I Want To Break Free")
-	expect(firstTrackResult).toBeInTheDocument()
-	expect(lastTrackResult).toBeInTheDocument()
+    const firstTrack = screen.getByText("Bohemian Rhapsody - Remastered 2011")
+	const lastTrack = screen.getByText("I Want To Break Free")
+	expect(firstTrack).toBeInTheDocument()
+	expect(lastTrack).toBeInTheDocument()
     
   });
