@@ -92,7 +92,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-1. Get Spotify API CLIENT_ID and CLIENT_SECRET at [https://developer.spotify.com/](https://developer.spotify.com/dashboard/applications). Please refer to  the [Documentation](https://developer.spotify.com/documentation/general/guides/app-settings/).
+1. Get Spotify API CLIENT_ID at [https://developer.spotify.com/](https://developer.spotify.com/dashboard/applications). Please refer to  the [Documentation](https://developer.spotify.com/documentation/general/guides/app-settings/).
 2. Clone the repo
    ```sh
    git clone https://github.com/diazamaliana/spotify-web-clone.git
@@ -109,7 +109,6 @@ To get a local copy up and running follow these simple example steps.
    ```JS
    REACT_APP_BASE_URL=http://localhost:3000/
    REACT_APP_SPOTIFY_CLIENT_ID=YOURCLIENTID
-   REACT_APP_SPOTIFY_CLIENT_SECRET=YOURCLIENTSECRET
    ```
 6. Runs the app in development mode. Open http://localhost:3000 to view it in the browser
     ```sh
@@ -125,7 +124,7 @@ To get a local copy up and running follow these simple example steps.
     ```
     You will find this 
     <p align="center">
-       <img src='https://raw.githubusercontent.com/diazamaliana/spotify-web-clone/master/shoots/__test__.jpg' alt='testing shoots'/>
+       <img src='https://raw.githubusercontent.com/diazamaliana/spotify-web-clone/master/shoots/__test__2.jpg' alt='testing shoots'/>
     </p>
 
 
