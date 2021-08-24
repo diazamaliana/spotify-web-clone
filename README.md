@@ -58,7 +58,7 @@ Spotigi is Spotify Generasi Gigih, a React front-end client that communicates wi
 - [⚡️ Chakra UI](https://chakra-ui.com/docs/getting-started) for styling and layout.
 - [<img src='https://react-redux.js.org/img/redux_white.svg' width='16'/> React Redux](https://react-redux.js.org/) for state management.
 - [<img src='https://iconape.com/wp-content/files/sm/371377/svg/371377.svg' width='16'/> React Router](https://reactrouter.com/web/guides/quick-start) to define routes in the application.
-- [🐙 react-testing-library](https://testing-library.com/) for testing.
+- [🐙 react-testing-library and jest](https://testing-library.com/) for testing.
 - Written in [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and [Typescript](https://www.typescriptlang.org/).
 - Hosted on [Vercel](https://vercel.com/)🚀.
 
